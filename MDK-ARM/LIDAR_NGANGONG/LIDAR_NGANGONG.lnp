@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"lidar_ngangong\startup_stm32f407xx.o"
+"lidar_ngangong\main.o"
+"lidar_ngangong\stm32f4xx_it.o"
+"lidar_ngangong\stm32f4xx_hal_msp.o"
+"lidar_ngangong\stm32f4xx_hal_tim.o"
+"lidar_ngangong\stm32f4xx_hal_tim_ex.o"
+"lidar_ngangong\stm32f4xx_hal_rcc.o"
+"lidar_ngangong\stm32f4xx_hal_rcc_ex.o"
+"lidar_ngangong\stm32f4xx_hal_flash.o"
+"lidar_ngangong\stm32f4xx_hal_flash_ex.o"
+"lidar_ngangong\stm32f4xx_hal_flash_ramfunc.o"
+"lidar_ngangong\stm32f4xx_hal_gpio.o"
+"lidar_ngangong\stm32f4xx_hal_dma_ex.o"
+"lidar_ngangong\stm32f4xx_hal_dma.o"
+"lidar_ngangong\stm32f4xx_hal_pwr.o"
+"lidar_ngangong\stm32f4xx_hal_pwr_ex.o"
+"lidar_ngangong\stm32f4xx_hal_cortex.o"
+"lidar_ngangong\stm32f4xx_hal.o"
+"lidar_ngangong\stm32f4xx_hal_exti.o"
+"lidar_ngangong\stm32f4xx_hal_uart.o"
+"lidar_ngangong\system_stm32f4xx.o"
+--strict --scatter "LIDAR_NGANGONG\LIDAR_NGANGONG.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LIDAR_NGANGONG.map" -o LIDAR_NGANGONG\LIDAR_NGANGONG.axf
